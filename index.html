@@ -1,0 +1,87 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Glaucoma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1.5em; 
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            margin: 5vw; 
+            forced-color-adjust: none;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        #contrastButton {
+            padding: 1em; 
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #contrastButton:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .high-contrast {
+            color: #fff;
+            background-color: #000;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                
+                font-size: 1em;
+                margin: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lets Understand Glaucoma</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>What does Glaucoma entail?</h2>
+            <p>Glaucoma comprises a set of eye conditions that harm the optic nerve, usually resulting from elevated pressure within the eye.</p>
+        </section>
+
+        <section>
+            <h2>Identifying Glaucoma</h2>
+            <p>Signs may encompass vision blurriness, intense eye pain, headaches, and the perception of halos around lights.</p>
+        </section>
+
+        <section>
+            <h2>Caring for Those with Glaucoma</h2>
+            <p>Routine eye examinations, medications as prescribed, and lifestyle modifications can effectively control glaucoma.</p>
+        </section>
+    </main>
+
+    <button id="toggle-high-contrast" aria-pressed="false">Toggle High Contrast</button>
+
+    <script>
+        var toggleButton = document.getElementById("toggle-high-contrast");
+
+        toggleButton.addEventListener("click", function () {
+            var body = document.getElementsByTagName("body")[0];
+            body.classList.toggle("high-contrast");
+        });
+    </script>
+
+</body>
+</html>
